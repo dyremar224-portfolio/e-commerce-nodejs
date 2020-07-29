@@ -9,4 +9,8 @@ module.exports = {
         const sql = 'SELECT * FROM products WHERE id = ?';
         return query(sql, values);
     },
+    create: (values) => {
+        const sql = 'INSERT INTO products (title, description) VALUE (?, ?)';
+        return query(sql, values);
+    },
 }

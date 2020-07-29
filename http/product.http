@@ -6,3 +6,12 @@ Accept: application/json
 GET http://{{host}}/api/product/4
 Accept: application/json
 
+###
+POST http://{{host}}/api/product
+Content-Type: application/json
+
+{
+  "title": "1234",
+  "description": "descriptiondescription"
+}
+
