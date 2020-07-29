@@ -17,4 +17,8 @@ module.exports = {
         const sql = 'UPDATE products SET title = ?, description = ? WHERE id = ?';
         return query(sql, values);
     },
+    $delete: (values) => {
+        const sql = 'DELETE FROM products WHERE id = ?';
+        return query(sql, values);
+    }
 }

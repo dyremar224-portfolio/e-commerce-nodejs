@@ -25,3 +25,9 @@ Content-Type: application/json
   "description": "descriptiondescription"
 }
 
+###
+DELETE http://{{host}}/api/product/3
+Accept: application/json
+
+###
+
