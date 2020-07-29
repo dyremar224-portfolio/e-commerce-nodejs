@@ -7,6 +7,8 @@ const port = process.env.PORT || 3000;
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
+app.use('/api/product', require('./routes/product/index'));
+
 app.use((err, req, res, next) => {
     require("../exceptions/HandleError")(err, req, res);
 });

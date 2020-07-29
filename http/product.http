@@ -1,0 +1,4 @@
+###
+GET http://{{host}}/api/product
+Accept: application/json
+
