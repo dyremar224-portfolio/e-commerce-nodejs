@@ -40,6 +40,17 @@ If the installation was successful, you should be able to run the following comm
 
     $ cp .env.dist .env
 
+```sql
+create table products
+(
+  id          int unsigned auto_increment
+        primary key,
+  title       varchar(64)                         not null,
+  description varchar(2048)                       null,
+  createdAt   timestamp default CURRENT_TIMESTAMP null
+);
+```
+
 ## Running the project
 
     $ npm run serve
