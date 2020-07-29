@@ -15,3 +15,13 @@ Content-Type: application/json
   "description": "descriptiondescription"
 }
 
+###
+PUT http://{{host}}/api/product
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "1234",
+  "description": "descriptiondescription"
+}
+

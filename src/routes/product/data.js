@@ -13,4 +13,8 @@ module.exports = {
         const sql = 'INSERT INTO products (title, description) VALUE (?, ?)';
         return query(sql, values);
     },
+    edit: (values) => {
+        const sql = 'UPDATE products SET title = ?, description = ? WHERE id = ?';
+        return query(sql, values);
+    },
 }
