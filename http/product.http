@@ -2,3 +2,7 @@
 GET http://{{host}}/api/product
 Accept: application/json
 
+###
+GET http://{{host}}/api/product/4
+Accept: application/json
+
